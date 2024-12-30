@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Urvi Haval</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Urvi Haval</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/myprofilepic.png" alt="Urvi Haval profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Urvi Haval</h1>
+        <p class="section__text__p2">Graduate student at UPenn</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/UrviHaval_resume_EM (1).pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/urvi-haval/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/quantumbluee'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="text-container">
+          <p>
+            I am an Electrical Engineering student with a strong focus on leveraging embedded systems and Artificial Intelligence (AI) to create innovative applications. Proficient in Python and equipped with a solid understanding of Artificial Intelligence and Machine Learning through past experience, I am currently actively exploring firmware development on various microprocessors and platforms to deepen my expertise. I thrive in problem-solving environments and enjoy turning complex challenges into practical solutions. 
+          </p>
+          <p><b>Skills:</b></p>
+          <p><b>Software/Programming:</b> Python, C, C++, Linux, MATLAB, Assembly, GitHub, AWS, Simulink, TensorFlow, HTML/CSS</p>
+          <p><b>Embedded Systems:</b> RTOS basics, Embedded Linux, Device Drivers, FreeRTOS, Interfaces and Protocols, WiFi, ROS</p>
+          <P><b>Hardware:</b> Raspberry Pi, STM32, Jetson Nano, ATmega328PB, Electronic Prototyping, DSP, Communication protocols
+          </P>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+
+     
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Look at my</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Student Project, mLab UPenn</h2>
+          <p class="experience-dates">October 2024 – Present</p>
+          <div class="article-container">
+            <p>• Developing a vision pipeline for a 1/18th scale F1 car (F18) using Raspberry Pi 5 to support real-time image processing.</p>
+            <p>• Implementing algorithms for autonomous navigation, enhancing the car's ability to process and respond to its environment in real-time.</p>
+          </div>
+        </div>
+    
+        <div class="details-container">
+          <h2 class="experience-sub-title">Research Intern, CSIR-National Chemical Laboratory</h2>
+          <p class="experience-dates">July 2023 – February 2024</p>
+          <div class="article-container">
+            <p>• Utilized computer vision and natural language processing algorithms to analyze and extract structured information from a corpus of 450 physical chemistry research papers for generating a database of experiment parameters.</p>
+            <p>• Implemented 10 image classification, segmentation, and object detection models, improving information retrieval efficiency of plots and graphs.</p>
+          </div>
+        </div>
+    
+        <div class="details-container">
+          <h2 class="experience-sub-title">Research Intern, Qkrishi</h2>
+          <p class="experience-dates">December 2022 – February 2023</p>
+          <div class="article-container">
+            <p style="margin: 5px 0;">• Researched about the application of quantum decision trees to a finance problem statement. </p>
+            <p style="margin: 5px 0;">• Performed exploratory data analysis and pre-processing for quantum machine learning using the Qiskit framework.</p>
+          </div>
+        </div>
+    
+        <div class="details-container">
+          <h2 class="experience-sub-title">Mentee, KaggleX BIPOC Mentorship</h2>
+          <p class="experience-dates">November 2022 – June 2023</p>
+          <div class="article-container">
+            <p>• Awarded a career grant for mentorship in data science and machine learning and researched its applications to electrical engineering under the guidance of an industry expert</p>
+            <p>• Implemented and showcased a nal project related to Indian music genre classication using machine learning.</p>
+          </div>
+        </div>
+    
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sleep-inator: The Smart Pillow using ATmega328PB</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sidram1705/Sleep-inator'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://sidram1705.github.io/Sleep-inator/'"
+              >
+                Project Website
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Evaluating Adversarial Attacks in Medical Imaging: PGD Attack and Pixel Detection Transform</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1INBhlqVTyvtt0QX_oeUeguCwmZsqCBax/view?usp=sharing'"
+              >
+                Project Report
+          
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Simulation-based control of a robotic arm using PINNs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ieeexplore.ieee.org/document/10668157'"
+              >
+                Project Paper
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">uhaval@seas.upenn.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/urvi-haval/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Urvi Haval.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
